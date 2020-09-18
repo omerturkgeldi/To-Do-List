@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="height: 65px; position: sticky;" class="container-fluid dark text-light text-center p-2 pt-3 full-width-div">
+        <h3>Todo List</h3>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="box col-md-8" style="height:auto;background-color: white;">
+
+                <div class="container pt-4 pr-4">
+                    <h4>Yapılacaklar</h4>
+                </div>
+
+
+                <div class="container p-4" id="todoList">
+                    <div style="display: none;" class=" div-card btn-todo alert alert-primary button-curved">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5 id="h5Todo" class="text-black todoTitle">1. Golang Öğren</h5>
+                            </div>
+                            <div class="col-md-9 text-right">
+                                <a class="silButonu btn alert-danger button-curved col-sm-12 col-md-2" id="clear-todo">Sil</a>
+                                <a class="tikButonu btn alert-danger button-curved col-sm-12 col-md-2" style="color: white;" data-role="tick-todo" id="tick-todo">Tamamla</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Önceki Tasarım -->
+                    <!-- 
+                    <div style="display: flex;" class=" btn-todo alert alert-primary button-curved">
+                        <p class="text-black pt-3">2. Html öğren</p>
+                        <div class="alert alert-danger d-flex justify-content-center ml-auto col-sm-2 button-curved">
+                            SİL</div>
+                    </div> -->
+                    <!-- background-color: #EBF2FF; -->
+
+                </div>
+            </div>
+            <div class="box col-md-4" style="min-height: calc(100vh - 65px); background-color: #EBF2FF;">
+                <div id="isEkleButton" class="container p-4">
+                    <h4>Yeni Kayıt Oluştur</h4>
+                    <p class="pt-3" style="color:#383838;">İş tanımını giriniz*</p>
+                    <form action="" id="form">
+                        <input type="text" id="formInput" class="form-control button-curved mb-3">
+                        <button id="isEkleButonu" onclick="getInputValue()" ; type="button" style="color: black;" class="btn btn-green button-curved btn-block">İŞ EKLE</button>
+                        <button id="clearAllTodos" type="button" style="color: white;" class="btn btn-red button-curved btn-block">TÜM GÖREVLERİ TEMİZLE</button>
+                    </form>
+                    <!-- <button id="tickAll" type="button" style="color: black;" class="btn btn-blue button-curved btn-block">GÖREVLERİ TAMAMLANDI OLARAK İŞARETLE</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

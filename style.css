@@ -1,0 +1,56 @@
+.html,
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.button-curved {
+    border-radius: 12px;
+}
+
+.dark {
+    background-color: #060608;
+    /* background-color: #000000; */
+}
+
+.tickButton-color {
+    background-color: #616e64;
+}
+
+.color-ticked {
+    background-color: #5ac3ec !important;
+}
+
+.btn-green {
+    background-color: #00eb3b;
+}
+
+.btn-red {
+    background-color: #df1411;
+}
+
+.btn-blue {
+    background-color: #52d4ff;
+}
+
+.alert-primary {
+    /* background-color: #B2FFD1; */
+    background-color: #daeaf6;
+}
+
+.alert-danger {
+    background-color: #ff008e;
+    /* background-color: #FF8A8A; */
+}
+
+.btn-delete {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.text-black {
+    color: black;
+}

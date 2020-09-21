@@ -2,5 +2,9 @@ bu dosya development branşına eklenmiştir...
 
 :D
 
+<<<<<<< HEAD
 
 DENEME-DENEME-DENEME-DENEME
+=======
+test
+>>>>>>> 867493c86dc3f0695b554da13f886c4657f6da5e

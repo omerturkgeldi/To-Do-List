@@ -110,11 +110,6 @@ var setTickOnClick = function() {
 
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    alert('Döküman hazır!');
-
-});
 
 setDeleteOnClick();
 setTickOnClick();
